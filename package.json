@@ -1,0 +1,47 @@
+{
+  "name": "WebLab1Attempt3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "somecode.js",
+  "scripts": {
+    "lint": "eslint ./src --ignore-path .gitignore",
+    "lint:css": "stylelint \"**/*.css\" --ignore-path .gitignore",
+    "lint:fmt": "prettier --check ./src --ignore-path .gitignore",
+    "lint:fix": "eslint ./src --fix --ignore-path .gitignore",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sviatoslav-dev/WebLab1Attempt3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sviatoslav-dev/WebLab1Attempt3/issues"
+  },
+  "homepage": "https://github.com/Sviatoslav-dev/WebLab1Attempt3#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-metarhia": "^7.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-sonarjs": "^0.10.0",
+    "husky": "^7.0.0",
+    "prettier": "^2.4.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staget"
+    }
+  },
+  "lint-staget": {
+    "*.js": [
+      "npm run eslint ./src",
+      "git add"
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+
+  <body>
+    <input type="checkbox" id="check-menu" />
+    <div class="menu">
+      <label for="check-menu" class="menu-button">
+        <span class="menu-lines"></span>
+      </label>
+      <nav class="menu-open">
+        <b class="menu-item">Item 1</b>
+        <b class="menu-item">Item 2</b>
+        <b class="menu-item">Item 3</b>
+        <b class="menu-item">Item 4</b>
+        <b class="menu-item">Item 5</b>
+      </nav>
+      <label for="check-menu">
+        <div class="menu-overlay"></div>
+      </label>
+    </div>
+
+    <main>
+      <div class="content-main">
+        <div class="slider middle">
+          <div class="slides">
+            <input type="radio" name="r" id="r1" checked />
+            <input type="radio" name="r" id="r2" />
+            <input type="radio" name="r" id="r3" />
+            <input type="radio" name="r" id="r4" />
+
+            <div class="slide s1"><img src="/1.jpg" /></div>
+            <div class="slide"><img src="/2.jpg" /></div>
+            <div class="slide"><img src="/3.jpg" /></div>
+            <div class="slide"><img src="/4.jpg" /></div>
+          </div>
+          <div class="navigation">
+            <label for="r1" class="bar"></label>
+            <label for="r2" class="bar"></label>
+            <label for="r3" class="bar"></label>
+            <label for="r4" class="bar"></label>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
